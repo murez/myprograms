@@ -1,6 +1,7 @@
+import os
 
-M=(raw_input("Please enter the mental like Fe+2,Fe+3,Mg,H,NH4 etc. : "))
-S=(raw_input("Please enter the source like SO4,Cl,NO3,OH etc. :"))
+M=(raw_input("Please enter the metal like Fe+2,Fe+3,Mg,H,NH4 etc. : "))#input mental
+S=(raw_input("Please enter the acidic group like SO4,Cl,NO3,OH etc. :"))#input acidic group
 if M=='H':
         m=0
         k=1
@@ -42,6 +43,9 @@ elif M=='Cu':
 elif M=='Ag':
         m=9
         k=1
+else :
+        print 'error: check your input'
+        os._exit(0)
 
 if S=='OH':
         s=3
@@ -58,6 +62,9 @@ elif S=='SO4':
 elif S=='CO3':
         s=1.5
         p=2
+else :
+        print 'error: check your input'
+        os._exit(0)
 
 if k==1:
         if p==1:
@@ -120,5 +127,11 @@ elif m-s==0:
 elif m-s>0:
         print M+a+S+b+'   no solubility'
 else :
-        print'Try again'
+        print 'something is wrong , please report to Zhangsiyuan /n email :ottozsy@outlook.com'
+        
+Quit=(raw_input("quit or not [y/n]"))
+if Quit =='y':
+        os._exit(0)
+        
+
 #made by ZhangSiyuan
