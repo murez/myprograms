@@ -61,45 +61,45 @@ elif S=='CO3':
 
 if k==1:
         if p==1:
-         a='_'
-         b='_'
+        	a='_'
+        	b='_'
         if p==2:
-         a='2'
-         b='_'
+        	a='2'
+        	b='_'
 elif k==2:
         if p==1:
-         a='_'
-         b='2'
+        	a='_'
+        	b='2'
         if p==2:
-         a='_'
-         b='_'
+        	a='_'
+        	b='_'
 elif k==3:
         if p==1:
-         a='_'
-         b='3'
+        	a='_'
+        	b='3'
         if p==2:
-         a='2'
-         b='3'
+        	a='2'
+        	b='3'
 
 if M=='NH4':
         if p==2:
-         M='(NH4)'
+        	M='(NH4)'
 elif S=='OH':
         if k==2:
-         S='(OH)'
+        	S='(OH)'
         elif k==3:
-         S='(OH)'
+        	S='(OH)'
 elif S=='NO3':
         if k==2:
-         S='(NO3)'
+        	S='(NO3)'
         elif k==3:
-         S='(NO3)'
+        	S='(NO3)'
 elif S=='SO4':
         if k==3:
-         S='(SO4)'
+        	S='(SO4)'
 elif S=='CO3':
         if k==3:
-         S='(CO3)'
+        	S='(CO3)'
         
 if m==2:
 	if s==8:
@@ -111,8 +111,8 @@ elif m==5:
 	if s==1.5:
 		print'no this kind of material'
 elif m==9:
- if s==3:
-  print'no this kind of material'
+	if s==3:
+		print'no this kind of material'
 elif m-s<0:
 	print M+a+S+b+'solubility'
 elif m-s==0:
